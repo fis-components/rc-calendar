@@ -1,0 +1,8 @@
+{
+    "repos": "http://github.com/react-component/calendar.git",
+    "description": "React Calendar",
+    "version": "4.0.1",
+    "tag": "master",
+    "name": "rc-calendar",
+    "main": "lib/index.js"
+}
