@@ -142,6 +142,12 @@ http://react-component.github.io/calendar/examples/index.html
           <td>whether to disable select of current date</td>
         </tr>
         <tr>
+          <td>disabledTime</td>
+          <td>Function(current:GregorianCalendar):Object</td>
+          <td>null</td>
+          <td>a function which return a object with member of disabledHours/disabledMinutes/disabledSeconds according to rc-time-picker</td>
+        </tr>
+        <tr>
           <td>showDateInput</td>
           <td>Boolean</td>
           <td>true</td>
@@ -160,10 +166,10 @@ http://react-component.github.io/calendar/examples/index.html
           <td>whether to show today button</td>
         </tr>
         <tr>
-          <td>showTime</td>
-          <td>Boolean</td>
-          <td>true</td>
-          <td>whether to support time select</td>
+          <td>timePicker</td>
+          <td>React Element</td>
+          <td>null</td>
+          <td>rc-timer-picker element</td>
         </tr>
         <tr>
           <td>onSelect</td>
@@ -254,10 +260,10 @@ http://react-component.github.io/calendar/examples/index.html
           <td>whether to show week number of year</td>
         </tr>
         <tr>
-          <td>showTime</td>
-          <td>Boolean</td>
-          <td>true</td>
-          <td>whether to support time select</td>
+          <td>timePicker</td>
+          <td>React Element</td>
+          <td>null</td>
+          <td>rc-timer-picker element</td>
         </tr>
         <tr>
           <td>onSelect</td>
@@ -270,6 +276,12 @@ http://react-component.github.io/calendar/examples/index.html
           <td>Function(date: GregorianCalendar[])</td>
           <td>function(){}</td>
           <td>called when a date range is changed inside calendar (next year/next month/keyboard)</td>
+        </tr>
+        <tr>
+          <td>dateInputPlaceholder</td>
+          <td>String[]</td>
+          <td></td>
+          <td>range date input's placeholders</td>
         </tr>
     </tbody>
 </table>
@@ -461,6 +473,12 @@ http://react-component.github.io/calendar/examples/index.html
           <td>prefixCls of this component</td>
         </tr>
         <tr>
+          <td>Select</td>
+          <td>React Component Class</td>
+          <td></td>
+          <td>rc-select Component Class</td>
+        </tr>
+        <tr>
           <td>value</td>
           <td> <a href="https://github.com/yiminghe/gregorian-calendar">GregorianCalendar</a> </td>
           <td></td>
@@ -477,6 +495,18 @@ http://react-component.github.io/calendar/examples/index.html
           <td>string</td>
           <td>date</td>
           <td>default panel type: date/month</td>
+        </tr>
+        <tr>
+          <td>type</td>
+          <td>string</td>
+          <td></td>
+          <td>panel type: date/month</td>
+        </tr>
+        <tr>
+          <td>onTypeChange</td>
+          <td>function(type)</td>
+          <td></td>
+          <td>called when panel type change</td>
         </tr>
         <tr>
           <td>fullscreen</td>
@@ -504,10 +534,6 @@ http://react-component.github.io/calendar/examples/index.html
         </tr>
     </tbody>
 </table>
-
-### rc-calendar/lib/assets/FullCalendar
-
-If you need to use rc-calendar/lib/FullCalendar's default css, you should require this instead of rc-calendar/assets/index.css
 
 ## Test Case
 
