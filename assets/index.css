@@ -7,70 +7,6 @@
 .rc-calendar-hidden {
   display: none;
 }
-.rc-calendar-input-wrap {
-  position: relative;
-  padding: 6px;
-  border-bottom: 1px solid #e9e9e9;
-}
-.rc-calendar-input-wrap:after {
-  content: '';
-  clear: both;
-}
-.rc-calendar-date-input-wrap {
-  overflow: hidden;
-}
-.rc-calendar-time-picker-wrap {
-  float: right;
-  width: 170px;
-}
-.rc-calendar-time-picker-wrap .rc-time-picker {
-  width: 100%;
-}
-.rc-calendar-time-picker-wrap .rc-time-picker-input {
-  padding: 0;
-  border: 1px solid transparent;
-  outline: 0;
-  height: 22px;
-}
-.rc-calendar-time-picker-wrap .rc-time-picker-icon {
-  display: none;
-}
-.rc-calendar-input {
-  border: 1px solid transparent;
-  width: 100%;
-  color: #666;
-  cursor: text;
-  line-height: 1.5;
-  outline: 0;
-  height: 22px;
-}
-.rc-calendar-input-invalid {
-  border-color: red;
-}
-.rc-calendar-clear-btn {
-  position: absolute;
-  right: 6px;
-  cursor: pointer;
-  overflow: hidden;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  line-height: 20px;
-  top: 6px;
-  margin: 0;
-}
-.rc-calendar-clear-btn:after {
-  content: "x";
-  font-size: 12px;
-  color: #aaa;
-  display: inline-block;
-  line-height: 1;
-  width: 20px;
-  transition: color 0.3s ease;
-}
-.rc-calendar-clear-btn:hover:after {
-  color: #666;
-}
 .rc-calendar-picker {
   position: absolute;
   left: -9999px;
@@ -86,6 +22,7 @@
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
           transform-origin: 0 0;
   display: block !important;
   opacity: 0;
@@ -100,6 +37,7 @@
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
           transform-origin: 0 0;
   display: block !important;
   opacity: 0;
@@ -114,6 +52,7 @@
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
           transform-origin: 0 0;
   display: block !important;
   opacity: 1;
@@ -297,6 +236,45 @@
   border: 1px solid #ccc;
   line-height: 1.5;
 }
+.rc-calendar-input-wrap {
+  position: relative;
+  padding: 6px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.rc-calendar-input {
+  border: 1px solid transparent;
+  width: 100%;
+  cursor: auto;
+  line-height: 1.5;
+  outline: 0;
+}
+.rc-calendar-input-invalid {
+  border-color: red;
+}
+.rc-calendar-clear-btn {
+  position: absolute;
+  right: 6px;
+  cursor: pointer;
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  top: 6px;
+  margin: 0;
+}
+.rc-calendar-clear-btn:after {
+  content: "x";
+  font-size: 12px;
+  color: #aaa;
+  display: inline-block;
+  line-height: 1;
+  width: 20px;
+  transition: color 0.3s ease;
+}
+.rc-calendar-clear-btn:hover:after {
+  color: #666;
+}
 .rc-calendar-date-panel {
   position: relative;
   outline: none;
@@ -465,13 +443,6 @@
   border-top: 1px solid #ccc;
   padding: 10px 0;
   text-align: center;
-  position: relative;
-}
-.rc-calendar-footer .rc-time-picker {
-  width: 90px;
-}
-.rc-calendar-footer .rc-time-picker-input {
-  height: 24px;
 }
 .rc-calendar-footer-btn {
   margin-top: 2px;
@@ -511,6 +482,7 @@
   color: #666;
   line-height: 1.5;
   -webkit-transform: border 0.3s cubic-bezier(0.35, 0, 0.25, 1), background 0.3s cubic-bezier(0.35, 0, 0.25, 1), box-shadow 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+      -ms-transform: border 0.3s cubic-bezier(0.35, 0, 0.25, 1), background 0.3s cubic-bezier(0.35, 0, 0.25, 1), box-shadow 0.3s cubic-bezier(0.35, 0, 0.25, 1);
           transform: border 0.3s cubic-bezier(0.35, 0, 0.25, 1), background 0.3s cubic-bezier(0.35, 0, 0.25, 1), box-shadow 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   width: 40px;
 }
@@ -801,6 +773,7 @@
 }
 .rc-calendar-year-panel-last-decade-cell .rc-calendar-year-panel-year {
   -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
           transform: rotate(180deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
@@ -908,61 +881,17 @@
 }
 .rc-calendar-decade-panel-last-century-cell .rc-calendar-decade-panel-decade {
   -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
           transform: rotate(180deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 .rc-calendar-range {
-  width: 502px;
+  width: 524px;
   overflow: hidden;
 }
 .rc-calendar-range-part {
   width: 250px;
   position: relative;
-}
-.rc-calendar-range-left {
-  float: left;
-}
-.rc-calendar-range-right {
-  float: right;
-}
-.rc-calendar-range-middle {
-  position: absolute;
-  left: 50%;
-  width: 20px;
-  margin-left: -10px;
-  text-align: center;
-  height: 35px;
-  line-height: 35px;
-}
-.rc-calendar-range .rc-calendar-date-input-wrap,
-.rc-calendar-range .rc-calendar-time-picker-wrap {
-  width: 47%;
-}
-.rc-calendar-range .rc-calendar-time-picker-wrap {
-  position: absolute;
-  left: 50%;
-}
-.rc-calendar-range .rc-time-picker-input {
-  width: 100%;
-}
-.rc-calendar-range .rc-calendar-input-wrap {
-  height: 35px;
-}
-.rc-calendar-range .rc-calendar-input,
-.rc-calendar-range .rc-time-picker-input {
-  border: 1px solid #d9d9d9;
-  border-radius: 6px;
-  padding: 1px 7px;
-  height: 22px;
-}
-.rc-calendar-range .rc-time-picker-icon {
-  display: none;
-}
-.rc-calendar-range .rc-calendar-calendar-body,
-.rc-calendar-range .rc-calendar-decade-panel-body,
-.rc-calendar-range .rc-calendar-year-panel-body,
-.rc-calendar-range .rc-calendar-month-panel-body {
-  border-bottom: 1px solid #e9e9e9;
 }
 .rc-calendar-range.rc-calendar-week-number {
   width: 574px;
@@ -970,31 +899,15 @@
 .rc-calendar-range.rc-calendar-week-number .rc-calendar-range-part {
   width: 286px;
 }
-.rc-calendar-range .rc-calendar-year-panel,
-.rc-calendar-range .rc-calendar-month-panel {
-  top: 35px;
+.rc-calendar-range-left {
+  float: left;
 }
-.rc-calendar-range .rc-calendar-month-panel .rc-calendar-year-panel {
-  top: 0;
-}
-.rc-calendar-range .rc-calendar-decade-panel-table,
-.rc-calendar-range .rc-calendar-year-panel-table,
-.rc-calendar-range .rc-calendar-month-panel-table {
-  height: 198px;
+.rc-calendar-range-right {
+  float: right;
 }
 .rc-calendar-range .rc-calendar-in-range-cell {
   background: #ebf4f8;
   border-radius: 0;
-}
-.rc-calendar-range-bottom {
-  text-align: right;
-}
-.rc-calendar-range .rc-calendar-ok-btn {
-  position: static;
-  margin: 9px;
-}
-.rc-calendar-range .rc-calendar-today-btn {
-  margin: 12px 9px 0;
 }
 .rc-calendar-full-header {
   padding: 5px 10px;

@@ -4,13 +4,14 @@
     "tag": "master",
     "name": "rc-calendar",
     "main": "lib/index",
+    "version": "4.0.0",
     "reposType": "npm",
     "dependencies": {
-        "classnames": "2.x",
         "gregorian-calendar": "4.x",
         "gregorian-calendar-format": "4.x",
+        "object-assign": "4.x",
         "rc-trigger": "1.x",
-        "rc-util": "3.x"
-    },
-    "version": "5.2.0"
+        "rc-util": "3.x",
+        "rc-select": "5.x"
+    }
 }
