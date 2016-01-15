@@ -1,0 +1,17 @@
+{
+    "repos": "https://github.com/react-component/calendar.git",
+    "description": "React Calendar",
+    "tag": "master",
+    "name": "rc-calendar",
+    "main": "lib/index",
+    "version": "4.0.1",
+    "reposType": "npm",
+    "dependencies": {
+        "gregorian-calendar": "4.x",
+        "gregorian-calendar-format": "4.x",
+        "object-assign": "4.x",
+        "rc-trigger": "1.x",
+        "rc-util": "3.x",
+        "rc-select": "5.x"
+    }
+}
