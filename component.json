@@ -4,7 +4,7 @@
     "tag": "master",
     "name": "rc-calendar",
     "main": "lib/index",
-    "version": "5.2.1",
+    "version": "5.2.2",
     "reposType": "npm",
     "dependencies": {
         "classnames": "2.x",
